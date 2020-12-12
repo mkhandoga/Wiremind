@@ -39,6 +39,10 @@ columns_ready = ['current_price','days_before_departure', 'od_destination_time_m
 scalable_columns = columns_ready + ["od_destination_time_hourmin","od_origin_time_hourmin"]
 nonscalable_columns = ["direction_bool" , "demand", "of_holiday", "unof_holiday","date_numerical"]
 
+#scalable_columns = columns_ready + ["demand","od_destination_time_hourmin","od_origin_time_hourmin"]
+#nonscalable_columns = ["direction_bool" ,  "of_holiday", "unof_holiday","date_numerical"]
+
+
 input_features = scalable_columns + ["direction_bool", "of_holiday", "unof_holiday"]
 
 official_holidays_2018 = ["2018-04-02", "2018-05-01", "2018-05-08", "2018-05-10",
